@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
 import { FiX, FiClock, FiTag } from 'react-icons/fi';
 import Image from 'next/image';
+import { useState } from 'react';
 
 function ProjectModal({ project, onClose }) {
+  const [selectedImage, setSelectedImage] = useState(null);
   return (
     <motion.div
       className="fixed inset-0 z-50 flex items-center justify-center"
@@ -40,18 +42,23 @@ function ProjectModal({ project, onClose }) {
 
         {/* Images */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {project.ProjectImages.map((img) => (
+        {project.ProjectImages.map((img) => (
+          <div
+            key={img.id}
+            className="relative w-full h-64 sm:h-72 lg:h-80 overflow-hidden rounded-md"
+            onClick={() => setSelectedImage(img.img)}
+          >
             <Image
-              key={img.id}
               src={img.img}
               alt={project.title}
-              layout="responsive"
-              width={100}
-              height={80}
-              className="rounded-md"
+              fill
+              className="object-cover"
             />
-          ))}
+          </div>
+        ))}
         </div>
+
+        <a>CLICK PARA VER IMÁGEN COMPLETA</a>
 
         {/* Info */}
         <div className="mt-6">
@@ -87,7 +94,29 @@ function ProjectModal({ project, onClose }) {
           </div>
         </div>
       </div>
+
+
+
+      {selectedImage && (
+  <div
+    className="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center"
+    onClick={() => setSelectedImage(null)}
+  >
+    <div className="relative w-full max-w-4xl max-h-[90vh] overflow-auto">
+      <Image
+        src={selectedImage}
+        alt="Imagen ampliada"
+        width={1000}
+        height={800}
+        className="rounded-lg object-contain"
+      />
+    </div>
+  </div>
+)}
+
     </motion.div>
+
+    
   );
 }
 
