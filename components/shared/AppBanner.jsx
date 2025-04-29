@@ -72,7 +72,17 @@ function AppBanner() {
                   aria-label="Download Resume"
                 >
                   <FiArrowDownCircle className="h-5 w-5" />
-                  <span>DESCARGAR CV</span>
+                  <span>CV (ESPAÑOL)</span>
+                </a>
+
+                <a
+                  download="CV-CANTALLOPS_FAUSTO-ENGLISH.pdf"
+                  href="/files/CV-CANTALLOPS_FAUSTO-ENGLISH.pdf"
+                  className="font-general-medium flex items-center justify-center gap-x-2 w-36 sm:w-48 text-base sm:text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500"
+                  aria-label="Download Resume"
+                >
+                  <FiArrowDownCircle className="h-5 w-5" />
+                  <span>CV (ENGLISH)</span>
                 </a>
 
                 <a

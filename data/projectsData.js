@@ -83,7 +83,7 @@ export const projectsData = [
 		  { id: 2, img: '/images/landingfc-2.png' },
 		],
 		codeUrl: 'https://github.com/fauscantallops/erp-distribuidora',
-		previewUrl: 'https://erp-distribuidora.vercel.app',
+		previewUrl: 'https://fc-software.vercel.app',
 		technologies: [
 		  {
 			name: 'Next.js',
