@@ -26,8 +26,8 @@ export const projectsData = [
 		  { id: 1, img: '/images/erpdistri-web.png' },
 		  { id: 2, img: '/images/erpdistri-mobile.png' },
 		],
-		codeUrl: 'https://github.com/fausc22/erp_distri-front',
-		previewUrl: 'https://panel-vertimar.vercel.app/',
+		codeUrl: 'https://github.com/fausc22/distri-v2',
+		previewUrl: 'https://vertimar.vercel.app/',
 		technologies: [
 		  {
 			name: 'Node.js',
@@ -49,7 +49,7 @@ export const projectsData = [
 		  ClientHeading: 'Información del cliente',
 		  CompanyInfo: [
 			{ id: 1, title: 'Nombre', details: 'Verti-Mar SRL' },
-			{ id: 2, title: 'Website', details: 'https://vertimar.com' },
+			{ id: 2, title: 'Website', details: 'https://vertimar.vercel.app' },
 		  ],
 		  ObjectivesHeading: 'Objetivo',
 		  ObjectivesDetails: 'Proyecto de TESIS - Sistema ERP para automatizar procesos comerciales.',
@@ -82,7 +82,7 @@ export const projectsData = [
 		  { id: 1, img: '/images/landingfc-1.png' },
 		  { id: 2, img: '/images/landingfc-2.png' },
 		],
-		codeUrl: 'https://github.com/fauscantallops/erp-distribuidora',
+		codeUrl: 'https://github.com/fausc22/LANDING-FC_SOFTWARE',
 		previewUrl: 'https://fc-software.vercel.app',
 		technologies: [
 		  {
@@ -133,8 +133,8 @@ export const projectsData = [
 		  { id: 1, img: '/images/tienda-1.png' },
 		  { id: 2, img: '/images/tienda-2.png' },
 		],
-		codeUrl: 'https://github.com/fausc22/TiendaFront',
-		previewUrl: 'https://vertimar-tienda.vercel.app/',
+		codeUrl: 'https://github.com/fausc22/tienda-front',
+		previewUrl: 'https://tienda-puntosur.vercel.app/',
 		technologies: [
 		  {
 			name: 'Node.js',
@@ -155,8 +155,8 @@ export const projectsData = [
 		ProjectInfo: {
 		  ClientHeading: 'Información del cliente',
 		  CompanyInfo: [
-			{ id: 1, title: 'Nombre', details: 'Verti-Mar SRL' },
-			{ id: 2, title: 'Website', details: 'https://vertimar-tienda.vercel.app/' },
+			{ id: 1, title: 'Nombre', details: 'Punto Sur' },
+			{ id: 2, title: 'Website', details: 'https://tienda-puntosur.vercel.app/' },
 		  ],
 		  ObjectivesHeading: 'Objetivo',
 		  ObjectivesDetails: 'Crear una tienda online para la venta de productos de la empresa y la administracion de los mismos.',
